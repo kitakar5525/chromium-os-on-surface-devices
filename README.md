@@ -10,7 +10,7 @@ TOC:
         - [Build a Chromium OS dev image with modified kernel](#build-a-chromium-os-dev-image-with-modified-kernel)
         - [How to increase ROOT partition size of already built image?](#how-to-increase-root-partition-size-of-already-built-image)
         - [How to increase ROOT partition size when building a image?](#how-to-increase-root-partition-size-when-building-a-image)
-    - [How to retrieve the built image to home directory](#how-to-retrieve-the-built-image-to-home-directory)
+        - [How to retrieve the built image to home directory](#how-to-retrieve-the-built-image-to-home-directory)
     - [Or, use ArnoldTheBat's or CloudReady or any other prebuilt image with modified kernel](#or-use-arnoldthebats-or-cloudready-or-any-other-prebuilt-image-with-modified-kernel)
     - [Modify the image to use on Surface devices](#modify-the-image-to-use-on-surface-devices)
         - [Modify `/usr/sbin/write_gpt.sh`](#modify-usrsbinwrite_gptsh)
@@ -124,7 +124,7 @@ You may achieve this by editing
 
 
 
-## How to retrieve the built image to home directory
+### How to retrieve the built image to home directory
 ```bash
 (outside cros_sdk)
 cd ~
