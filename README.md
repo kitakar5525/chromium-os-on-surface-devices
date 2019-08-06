@@ -59,6 +59,7 @@ setup_board --board=${BOARD}
 
 # If you want to modify kernel, do it here
 # Follow my guide "How to build a kernel (using `cros_sdk`)"
+# https://github.com/kitakar5525/chromeos-kernel-linux-surface#fixme-module-load-order-for-built-in-modules
 
 # Build a dev image
 FEATURES="noclean" ./build_packages --board=${BOARD} && ./build_image --board=${BOARD} --noenable_rootfs_verification dev
