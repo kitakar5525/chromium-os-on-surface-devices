@@ -14,6 +14,38 @@ References (some sources written in Japanese):
 
 
 
+TOC:
+<!-- TOC -->
+
+- [Multiboot Chromium OS with another OSes on Surface devices](#multiboot-chromium-os-with-another-oses-on-surface-devices)
+    - [Build the whole Chromium OS by yourself](#build-the-whole-chromium-os-by-yourself)
+        - [Storage requirement](#storage-requirement)
+        - [How to checkout repo to specific branch?](#how-to-checkout-repo-to-specific-branch)
+        - [Build a Chromium OS dev image with modified kernel](#build-a-chromium-os-dev-image-with-modified-kernel)
+        - [How to increase ROOT partition size of already built image?](#how-to-increase-root-partition-size-of-already-built-image)
+        - [How to increase ROOT partition size when building a image?](#how-to-increase-root-partition-size-when-building-a-image)
+    - [How to retrieve the built image to home directory](#how-to-retrieve-the-built-image-to-home-directory)
+    - [Or, use ArnoldTheBat's or CloudReady or any other prebuilt image with modified kernel](#or-use-arnoldthebats-or-cloudready-or-any-other-prebuilt-image-with-modified-kernel)
+    - [Modify the image to use on Surface devices](#modify-the-image-to-use-on-surface-devices)
+        - [Modify `/usr/sbin/write_gpt.sh`](#modify-usrsbinwrite_gptsh)
+        - [another modifications to use on Surface devices](#another-modifications-to-use-on-surface-devices)
+            - [linux-firmware](#linux-firmware)
+            - [Sound on Surface Book 1 may not working by default.](#sound-on-surface-book-1-may-not-working-by-default)
+            - [Sound is not working on Surface 3 by default. Add UCM file:](#sound-is-not-working-on-surface-3-by-default-add-ucm-file)
+            - [Tap to click is not working by default. Edit `/etc/gesture/40-touchpad-cmt.conf`](#tap-to-click-is-not-working-by-default-edit-etcgesture40-touchpad-cmtconf)
+            - [Disable hardware TPM (valid only if you build your tpm module as external module, not built-in)](#disable-hardware-tpm-valid-only-if-you-build-your-tpm-module-as-external-module-not-built-in)
+            - [You may also want to disable `mwlwifi` module:](#you-may-also-want-to-disable-mwlwifi-module)
+            - [Useful chrome flags](#useful-chrome-flags)
+            - [You may want to add additional fonts](#you-may-want-to-add-additional-fonts)
+            - [(optional) if you want to boot this image from USB storage, change STATE partition number](#optional-if-you-want-to-boot-this-image-from-usb-storage-change-state-partition-number)
+            - [(optional) change boot parameter if you want](#optional-change-boot-parameter-if-you-want)
+            - [unmount the loop device](#unmount-the-loop-device)
+    - [How to install Chromium OS for multiboot?](#how-to-install-chromium-os-for-multiboot)
+
+<!-- /TOC -->
+
+
+
 ### Storage requirement
 
 It used up to about 200GB while building `stabilize-11895.118.B`
