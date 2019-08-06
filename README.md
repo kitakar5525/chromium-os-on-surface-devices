@@ -1,19 +1,5 @@
 # Multiboot Chromium OS with another OSes on Surface devices
 
-## Build the whole Chromium OS by yourself
-
-Basically, follow this guide:
-- [Chromium OS Docs - Chromium OS Developer Guide](https://chromium.googlesource.com/chromiumos/docs/+/master/developer_guide.md)
-
-I'll explain what is not described in the above guide.
-
-References (some sources written in Japanese):
-- [Chromium OS Docs - Chromium OS Developer Guide](https://chromium.googlesource.com/chromiumos/docs/+/master/developer_guide.md)
-- [Chromium OSをビルド - Qiita](https://qiita.com/maeda_mikio/items/841ef4b64a78dd1d1d28)
-- [Chromium OSでバッテリ駆動時間は伸びるのか? NEC LaVie Zで試す - ビルド実行編](https://blog.c6h12o6.org/post/chromiumos-self-build-build/)
-
-
-
 TOC:
 <!-- TOC -->
 
@@ -43,6 +29,18 @@ TOC:
     - [How to install Chromium OS for multiboot?](#how-to-install-chromium-os-for-multiboot)
 
 <!-- /TOC -->
+
+## Build the whole Chromium OS by yourself
+
+Basically, follow this guide:
+- [Chromium OS Docs - Chromium OS Developer Guide](https://chromium.googlesource.com/chromiumos/docs/+/master/developer_guide.md)
+
+I'll explain what is not described in the above guide.
+
+References (some sources written in Japanese):
+- [Chromium OS Docs - Chromium OS Developer Guide](https://chromium.googlesource.com/chromiumos/docs/+/master/developer_guide.md)
+- [Chromium OSをビルド - Qiita](https://qiita.com/maeda_mikio/items/841ef4b64a78dd1d1d28)
+- [Chromium OSでバッテリ駆動時間は伸びるのか? NEC LaVie Zで試す - ビルド実行編](https://blog.c6h12o6.org/post/chromiumos-self-build-build/)
 
 
 
